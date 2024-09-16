@@ -13,7 +13,12 @@ jobs:
         run: npm install
 
       - name: Run Cypress Tests
-        run: npx cypress run --env name=dev
+        uses: cypress-io/github-action@v6
+        with:
+          spec: 'cypress/e2e/apiTests.cy.js'
+          record: false
+          env:
+            name: dev 
 
       - name: Merge and Generate Report
         if: ${{ always() }}
