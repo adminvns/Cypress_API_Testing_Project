@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project contains an automated test suite for SWAPI (Star Wars API), leveraging Cypress for REST API testing. The suite includes test cases for verifying various Star Wars API endpoints such as fetching the list of people and retrieving a specific person by ID.
+This project contains an automated test suite for SWAPI (Star Wars API - https://swapi.dev), leveraging Cypress for REST API testing. The suite includes test cases for verifying various Star Wars API endpoints such as fetching the list of people and retrieving a specific person by ID.
 
 ## Table of Contents
 
