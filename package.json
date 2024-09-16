@@ -1,0 +1,18 @@
+{
+  "name": "shell_assignment_api",
+  "version": "1.0.0",
+  "description": "To Automate REST APIs for Shell Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shubham Singh",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.14.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
