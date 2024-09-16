@@ -12,15 +12,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Set Up Environment
-        run: echo "CYPRESS_ENV_NAME=dev" >> $GITHUB_ENV
-
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          spec: 'cypress/e2e/apiTests.cy.js'  # Adjust the spec path as needed
-        env:
-          CYPRESS_ENV_NAME: dev
+          spec: 'cypress/e2e/apiTests.cy.js'
+          record: false
+          start: npx cypress run --env name='dev'
 
       - name: Merge and Generate Report
         if: ${{ always() }}
