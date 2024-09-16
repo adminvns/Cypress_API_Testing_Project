@@ -17,8 +17,8 @@ jobs:
         with:
           spec: 'cypress/e2e/apiTests.cy.js'
           record: false
-          env:
-            name: dev 
+        env:
+          CYPRESS_ENV_NAME: dev  # Set your environment variable here
 
       - name: Merge and Generate Report
         if: ${{ always() }}
