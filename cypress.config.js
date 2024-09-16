@@ -1,10 +1,18 @@
 const { defineConfig } = require("cypress");
+const { readFileSync } = require('fs')
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://swapi.dev/api',
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      const envName = config.env.name;
+      const text = readFileSync(`environment_configs/${envName}.json`);
+      const values = JSON.parse(text);
+      config.env = {
+          "baseUrl": values.baseUrl
+      }
+      return config;
     },
   },
+  retries:1,
+
 });

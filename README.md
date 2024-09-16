@@ -7,9 +7,32 @@ This project contains an automated test suite for SWAPI (Star Wars API), leverag
 
 ## Table of Contents
 
-1. [Running the Tests Locally](#running-the-tests-locally)
-2. [Test Flows](#test-flows)
-3. [GitHub Actions CI/CD Pipeline](#github-actions-cicd-pipeline)
+1. [Project Environment Setup](#project-env)
+2. [Running the Tests Locally](#running-the-tests-locally)
+3. [Test Flows](#test-flows)
+4. [GitHub Actions CI/CD Pipeline](#github-actions-cicd-pipeline)
+
+## Project Environment Setup
+
+The project uses dynamic environment files stored in the environment_configs directory. Each environment (e.g., dev, stg, prod) has its own configuration file that contains environment-specific values such as baseUrl.
+
+**Example of a configuration file (environment_configs/dev.json):**
+
+
+
+    {
+        "baseUrl": "https://swapi.dev/api"
+    }
+
+
+**For production (environment_configs/prod.json):**
+    
+
+    
+    {
+     "baseUrl": "https://prod.example.com"
+    }
+
 
 ## Running the Tests Locally
 
@@ -18,13 +41,13 @@ To run the tests locally, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone <this repo>
-   cd repo
+   git clone https://github.com/adminvns/shell_assignment_api.git
+   cd shell_assignment_api
 2. **Install Dependencies**
 
      ```bash
    npm install
-   npx cypress run
+   npx cypress run --env name="dev"
 
 ## Test Flows
 The test suite covers the following cases:

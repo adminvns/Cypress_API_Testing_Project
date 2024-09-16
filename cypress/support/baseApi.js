@@ -1,7 +1,6 @@
-// cypress/support/baseAPI.js
+const baseUrl = Cypress.env('baseUrl')
 
 const apiRequest = (endpoint, method = 'GET', body = null) => {
-    const baseUrl = Cypress.config('baseUrl');
     return cy.request({
       method,
       url: `${baseUrl}/${endpoint}`,
