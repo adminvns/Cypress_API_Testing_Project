@@ -33,7 +33,6 @@ The project uses dynamic environment files stored in the environment_configs dir
      "baseUrl": "https://prod.example.com"
     }
 
-
 ## Running the Tests Locally
 
 To run the tests locally, follow these steps:
@@ -55,18 +54,20 @@ The test suite covers the following cases:
 1. **Verify List of People**
 
 Endpoint: GET /people/
-Test Description: Verify that the response returns a status of 200 and contains a list of people.
+
+**Test Description**: Verify that the response returns a status of 200 and contains a list of people.
 Validation:
-Status code is 200
-The response contains a results array
+- Status code is 200
+- The response contains a results array
 
 2. **Verify a Specific Person by ID**
 
 Endpoint: GET /people/{id}
-Test Description: Verify that a request for a specific person (Luke Skywalker) returns the correct details.
+
+**Test Description**: Verify that a request for a specific person (Luke Skywalker) returns the correct details.
 Validation:
-Status code is 200
-The response contains the name field with the value 'Luke Skywalker'
+- Status code is 200
+- The response contains the name field with the value 'Luke Skywalker'
 
 ## GitHub Actions CI/CD Pipeline
 
