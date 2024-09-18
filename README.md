@@ -42,7 +42,7 @@ To run the tests locally, follow these steps:
    ```bash
    git clone https://github.com/adminvns/shell_assignment_api.git
    cd shell_assignment_api
-2. **Install Dependencies**
+2. **Install Dependencies** (Make Sure you have Node JS installed - https://nodejs.org/en/download/package-manager)
 
      ```bash
    npm install
