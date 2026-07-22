@@ -1,4 +1,4 @@
-[![Cypress Tests](https://github.com/adminvns/shell_assignment_api/actions/workflows/cypress-tests.yml/badge.svg?branch=main)](https://github.com/adminvns/shell_assignment_api/actions/workflows/cypress-tests.yml)
+
 # Cypress API Test Suite for Assignment- Shell
 
 ## Overview
